@@ -21,20 +21,59 @@
     <!--Navbar Start-->
 
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Anjay<span>Mabar</span>.</a>
+      <a href="#" class="navbar-logo">Serba<span>Kuliner</span></a>
 
       <div class="navbar-nav">
-        <a href="#">Home</a>
+        <a href="#">Beranda</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#Products">Gallery</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari apa hayo..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search form end -->
+
+      <!-- shopping cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/Products/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/Products/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/Products/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- shopping cart end -->
     </nav>
 
     <!--Navbar End-->
@@ -43,8 +82,8 @@
 
     <section class="hero" id="home">
       <main class="content">
-        <h1>Mari Nikmati Secangkir<span>Kopi</span></h1>
-        <p>Lorem10 kata aku kamu anjay mabar haha kiw kiw</p>
+        <h1>Sederhana rasanya besar kenangannya<span></span></h1>
+        <p></p>
         <a href="#" class="cta">beli sekarang</a>
       </main>
     </section>
@@ -57,17 +96,27 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+          <img src="img/header2.jpeg" alt="Tentang Kami" />
         </div>
         <div class="content">
-          <h3>Kenapa Memilih aku</h3>
+          <h3></h3>
           <p>
-            Hari ini adalah kesempatan baru untuk melangkah maju. Jangan lupa
-            bersyukur dan tetap semangat!
+            Setiap suapan adalah langkah menuju hari yang lebih baik. Makanan
+            berat bukan sekadar pengisi perut, tapi energi yang memberi kita
+            kekuatan untuk berjuang, berkreasi, dan bermimpi. Nikmati setiap
+            hidangan penuh gizi dan cita rasa, karena tubuh yang sehat dimulai
+            dari piring yang penuh makna. Pilih makanan yang membuatmu berdiri
+            lebih kokoh, berlari lebih jauh, dan menghadapi dunia dengan
+            semangat penuh.
           </p>
           <p>
-            Hari ini adalah kesempatan baru untuk melangkah maju. Jangan lupa
-            bersyukur dan tetap semangat!
+            Hidangan di depanmu bukan sekadar pengisi perut, tapi energi yang
+            akan menemani setiap tantangan. Nasi hangat, lauk penuh gizi, dan
+            rasa yang kaya membawa kekuatan untuk berkreasi, bekerja, dan
+            bermimpi. Santap dengan nikmat, syukuri setiap rasa, dan biarkan
+            tubuhmu terisi dengan semangat baru. Hidup ini adalah perjalanan
+            panjang, dan setiap piring yang kamu nikmati adalah bahan bakar
+            untuk melangkah lebih jauh. 🌾🍛
           </p>
         </div>
       </div>
@@ -84,61 +133,180 @@
       </p>
       <div class="row">
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Nasi padang" class="menu-card-img" />
-          <h3 class="menu-card-title">- Nasi padang</h3>
-          <p class="menu-card-price">IDR 100k</p>
+          <img
+            src="Gambar/Baby Crab.jpg"
+            alt="Baby Crab"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baby Crab</h3>
+          <p class="menu-card-price">IDR 10k</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Nasi padang" class="menu-card-img" />
-          <h3 class="menu-card-title">- Nasi padang</h3>
-          <p class="menu-card-price">IDR 100k</p>
+          <img src="Gambar/Corndog.jpg" alt="Corndog" class="menu-card-img" />
+          <h3 class="menu-card-title">- Corndog</h3>
+          <p class="menu-card-price">IDR 10k</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Nasi padang" class="menu-card-img" />
-          <h3 class="menu-card-title">- Nasi padang</h3>
-          <p class="menu-card-price">IDR 100k</p>
+          <img src="Gambar/Gorengan.jpg" alt="Gorengan" class="menu-card-img" />
+          <h3 class="menu-card-title">- Gorengan</h3>
+          <p class="menu-card-price">IDR 2K-5K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Nasi padang" class="menu-card-img" />
-          <h3 class="menu-card-title">- Nasi padang</h3>
-          <p class="menu-card-price">IDR 100k</p>
+          <img src="Gambar/Takoyaki.jpg" alt="Takoyaki" class="menu-card-img" />
+          <h3 class="menu-card-title">- Takoyaki</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img src="Gambar/pempek.jpg" alt="Pempek" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pempek</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="Gambar/Tahu Bakso.jpg"
+            alt="Tahu Bakso"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Tahu Bakso</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img src="Gambar/rawonjpeg.jpeg" alt="Rawon" class="menu-card-img" />
+          <h3 class="menu-card-title">- Rawon</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img src="Gambar/bakso.jpeg" alt="Bakso" class="menu-card-img" />
+          <h3 class="menu-card-title">-Bakso</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="Gambar/Sotoayam.jpeg"
+            alt="Soto ayam"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Soto ayam</h3>
+          <p class="menu-card-price">IDR 10k</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="Gambar/crispy.jpeg"
+            alt="ayam goreng"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Ayam Goreng</h3>
+          <p class="menu-card-price">IDR 10k</p>
         </div>
       </div>
     </section>
     <!--Menu Section End-->
 
+    <!-- Product section start -->
+    <section class="products" id="products">
+      <h2><span>Gallery</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia
+        aut quia minus suscipit blanditiis.
+      </p>
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Products/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Nasi Padang</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Products/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Nasi Padang</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Products/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Nasi Padang</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product section end -->
+
     <!-- Contact Section Start-->
 
     <section id="contact" class="contact">
       <h2><span>Kontak</span>Kami</h2>
-      <p>
-        Hari ini adalah kesempatan baru untuk melangkah maju. Jangan lupa
-        bersyukur dan tetap semangat!
-      </p>
+      <p></p>
 
       <div class="row">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d304.13368428891886!2d112.23660426743572!3d-7.6072196420328035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sid!4v1731936587840!5m2!1sen!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.2196735432696!2d112.23546875902905!3d-7.607363592318594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7841e2c11698ab%3A0x3c2557cd00229585!2sSENTRA%20KULINER%20JOMBANG!5e1!3m2!1sen!2sid!4v1732794911331!5m2!1sen!2sid"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        class="map"></iframe>
+          class="map"
+        ></iframe>
 
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text"
-            placeholder="nama">
+            <input type="text" placeholder="nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text"
-            placeholder="email">
+            <input type="text" placeholder="email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text"
-            placeholder="nomer hp">
+            <input type="text" placeholder="nomer hp" />
           </div>
           <button type="submit" class="btn">Kirim pesan</button>
         </form>
@@ -162,11 +330,41 @@
       </div>
 
       <div class="credit">
-        <p>Created by <a href="">
-          Ravi dan Hamzah</a>. | &copy; 2024.</p>
+        <p>Created by <a href=""> Ravi dan Hamzah</a>. | &copy; 2024.</p>
       </div>
     </footer>
     <!--footer end-->
+
+    <!--modal box item deail start-->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/Products/1.jpeg" alt="product 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              amet nostrum nihil ipsum iure exercitationem? Rem tenetur delectus
+              eum! Exercitationem hic ducimus quae eos nemo pariatur sit natus
+              doloribus mollitia.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal box item deail end-->
 
     <!--Feather Icons-->
     <script>
