@@ -101,13 +101,11 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
-// Select all modals and close buttons
 document.querySelectorAll(".modal").forEach((modal) => {
   const closeIcon = modal.querySelector(".close-icon");
 
-  // Add click event listener to each close icon
   closeIcon.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent default link behavior
-    modal.style.display = "none"; // Hide the modal
+    event.preventDefault();
+    modal.style.display = "none";
   });
 });
