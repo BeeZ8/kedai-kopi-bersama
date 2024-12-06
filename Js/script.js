@@ -41,25 +41,71 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//modal box
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+const modalContent = itemDetailModal.querySelector(".modal-content");
+
+const productData = {
+  "baby-crab": {
+    img: "Gambar/Baby Crab.jpg",
+    title: "Baby Crab",
+    description:
+      "Nikmati gurih dan renyahnya Baby Crab pilihan, cocok untuk segala jenis hidangan.",
+    stars: 3,
+    price: "IDR 30K",
+    oldPrice: "IDR 55K",
+  },
+  "nasi-padang": {
+    img: "img/Products/1.jpeg",
+    title: "Nasi Padang",
+    description:
+      "Hidangan khas Minang dengan cita rasa autentik, lengkap dengan pilihan lauk.",
+    stars: 5,
+    price: "IDR 30K",
+    oldPrice: "IDR 55K",
+  },
+};
+
+function generateStars(starCount) {
+  let stars = "";
+  for (let i = 1; i <= 5; i++) {
+    stars += `<i data-feather="star" class="${
+      i <= starCount ? "star-full" : ""
+    }"></i>`;
+  }
+  return stars;
+}
 
 itemDetailButtons.forEach((btn) => {
   btn.onclick = (e) => {
-    itemDetailModal.style.display = "flex";
+    const productKey = btn.dataset.product;
+    const product = productData[productKey];
+
+    if (product) {
+      modalContent.innerHTML = `
+        <img src="${product.img}" alt="${product.title}" />
+        <div class="product-content">
+          <h3>${product.title}</h3>
+          <p>${product.description}</p>
+          <div class="product-stars">${generateStars(product.stars)}</div>
+          <div class="product-price">${product.price} <span>${
+        product.oldPrice
+      }</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></a>
+        </div>
+      `;
+      feather.replace();
+      itemDetailModal.style.display = "flex";
+    }
     e.preventDefault();
   };
 });
-
-// click tombol close modal
 
 document.querySelector(".modal .close-icon").onclick = (e) => {
   itemDetailModal.style.display = "none";
   e.preventDefault();
 };
 
-//click di luar tombal
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = "none";

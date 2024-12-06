@@ -204,20 +204,23 @@
 
     <!-- Product section start -->
     <section class="products" id="products">
-      <h2><span>Produk</span>Kami</h2>
-      <p>
-        Disini anda bisa melihat detail produk kami 
-      </p>
+      <h2><span>Produk</span> Kami</h2>
+      <p>Disini anda bisa melihat detail produk kami</p>
       <div class="row">
+        <!-- Product Card 1 -->
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
+            <a
+              href="#item-detail-modal"
+              class="item-detail-button"
+              data-product="baby-crab"
+            >
+              <i data-feather="eye"></i>
+            </a>
           </div>
           <div class="product-image">
-            <img src="Gambar/Baby Crab.jpg" alt="Product 1" />
+            <img src="Gambar/Baby Crab.jpg" alt="Baby Crab" />
           </div>
           <div class="product-content">
             <h3>Baby Crab</h3>
@@ -231,15 +234,21 @@
             <div class="product-price">IDR 30K <span>IDR 55K</span></div>
           </div>
         </div>
+
+        <!-- Product Card 2 -->
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
+            <a
+              href="#item-detail-modal"
+              class="item-detail-button"
+              data-product="nasi-padang"
+            >
+              <i data-feather="eye"></i>
+            </a>
           </div>
           <div class="product-image">
-            <img src="img/Products/1.jpeg" alt="Product 1" />
+            <img src="img/Products/1.jpeg" alt="Nasi Padang" />
           </div>
           <div class="product-content">
             <h3>Nasi Padang</h3>
@@ -249,34 +258,69 @@
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"
-              ><i data-feather="eye"></i
-            ></a>
-          </div>
-          <div class="product-image">
-            <img src="img/Products/1.jpeg" alt="Product 1" />
-          </div>
-          <div class="product-content">
-            <h3>Nasi Padang</h3>
-            <div class="product-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
             </div>
             <div class="product-price">IDR 30K <span>IDR 55K</span></div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal Baby Crab -->
+    <div class="modal" id="modal-baby-crab">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="Gambar/Baby Crab.jpg" alt="Baby Crab" />
+          <div class="product-content">
+            <h3>Baby Crab</h3>
+            <p>
+              Nikmati gurih dan renyahnya Baby Crab pilihan, cocok untuk segala
+              jenis hidangan.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>Add to Cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Nasi Padang -->
+    <div class="modal" id="modal-nasi-padang">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/Products/1.jpeg" alt="Nasi Padang" />
+          <div class="product-content">
+            <h3>Nasi Padang</h3>
+            <p>
+              Hidangan khas Minang dengan cita rasa autentik, lengkap dengan
+              pilihan lauk.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>Add to Cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Product section end -->
 
     <!-- Contact Section Start-->
@@ -363,7 +407,7 @@
         </div>
       </div>
     </div>
-    
+
     <!--modal box item deail end-->
 
     <!--Feather Icons-->
