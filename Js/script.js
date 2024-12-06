@@ -101,11 +101,13 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
+// click tombol close modal
 document.querySelector(".modal .close-icon").onclick = (e) => {
   itemDetailModal.style.display = "none";
   e.preventDefault();
 };
 
+//* click di luar tombol
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = "none";
