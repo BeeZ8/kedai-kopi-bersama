@@ -101,6 +101,7 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
+
 document.querySelectorAll(".modal").forEach((modal) => {
   const closeIcon = modal.querySelector(".close-icon");
 
@@ -109,3 +110,9 @@ document.querySelectorAll(".modal").forEach((modal) => {
     modal.style.display = "none";
   });
 });
+//* click di luar tombol
+window.onclick = (e) => {
+  if (e.target === itemDetailModal) {
+    itemDetailModal.style.display = "none";
+  }
+};
