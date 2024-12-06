@@ -52,17 +52,17 @@ const productData = {
     description:
       "Nikmati gurih dan renyahnya Baby Crab pilihan, cocok untuk segala jenis hidangan.",
     stars: 3,
-    price: "IDR 30K",
-    oldPrice: "IDR 55K",
+    price: "IDR 10K",
+    oldPrice: "IDR 25K",
   },
   "nasi-padang": {
-    img: "img/Products/1.jpeg",
-    title: "Nasi Padang",
+    img: "Gambar/Takoyaki.jpg",
+    title: "Takoyaki",
     description:
-      "Hidangan khas Minang dengan cita rasa autentik, lengkap dengan pilihan lauk.",
+      "Hidangan khas Jombang dengan cita rasa autentik, lengkap dengan pilihan lauk.",
     stars: 5,
-    price: "IDR 30K",
-    oldPrice: "IDR 55K",
+    price: "IDR 10K",
+    oldPrice: "IDR 25K",
   },
 };
 
@@ -100,7 +100,6 @@ itemDetailButtons.forEach((btn) => {
     e.preventDefault();
   };
 });
-
 
 document.querySelectorAll(".modal").forEach((modal) => {
   const closeIcon = modal.querySelector(".close-icon");
