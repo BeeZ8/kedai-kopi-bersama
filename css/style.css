@@ -1,5 +1,5 @@
 :root {
-  --primary: #ffa600;
+  --primary: #00d9ff;
   --bg: #010101;
 }
 
@@ -30,7 +30,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid #ffa600;
+  border-bottom: 1px solid #00d9ff;
   position: fixed;
   top: 0;
   left: 0;
@@ -177,7 +177,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/header1.jpeg");
+  background-image: url("../Gambar/depan/header3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -204,9 +204,10 @@ body {
 
 .hero .content h1 {
   font-size: 5em;
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  color: #00d9ff;
+  text-shadow: 3px 3px 1px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
+  border-color: #0084ff;
 }
 
 .hero .content h1 span {
@@ -218,17 +219,17 @@ body {
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px #01010380;
   mix-blend-mode: difference;
 }
 
 .hero .content .cta {
   margin-top: 1rem;
   display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: #00d9ff;
   border-radius: 2rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
@@ -321,7 +322,6 @@ body {
   object-fit: cover; /* Pangkas gambar agar sesuai dengan ukuran */
   overflow: hidden; /* Hindari kelebihan konten */
 }
-
 
 .menu .row .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
@@ -484,59 +484,144 @@ footer .credit a {
 
 /* modal box */
 /*item detail*/
+/* Modal Overlay */
 .modal {
   display: none;
   position: fixed;
   z-index: 9999;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(1, 1, 1, 0.8);
 }
 
-.modal-container .close-icon {
-  position: absolute;
-  right: 1rem;
-}
-
-.modal-content {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.modal-content img {
-  height: 15rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-.modal-content p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  margin-top: 1.2rem;
-}
-
-.modal-content a {
-  display: flex;
-  gap: 1rem;
-  width: 12rem;
-  background-color: var(--primary);
-  color: #fff;
-  margin-top: 1rem;
-  padding: 1rem 1.6rem;
-}
-
+/* Modal Container */
 .modal-container {
-  position:relative;
+  position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
-  padding: 1.2rem;
+  margin: 10% auto;
+  padding: 2rem;
   border: 1px solid #666;
+  border-radius: 8px;
   width: 80%;
+  max-width: 600px; /* Membatasi lebar maksimal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Pusatkan teks dan konten lainnya */
+  animation: animateModal 0.5s;
 }
+
+
+/* modal animation */
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+to {
+  top: 0;
+  opacity: 1;
+}
+}
+
+/* Close Icon */
+.modal-container .close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.modal-container .close-icon:hover {
+  color: #333;
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column; /* Susunan vertikal */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  gap: 1rem; /* Jarak antar elemen */
+}
+
+/* Gambar */
+.modal-content img {
+  height: 12rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px; /* Sudut gambar lebih halus */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks */
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0; /* Reset margin untuk konsistensi */
+  color: #333;
+}
+
+/* Tombol */
+.modal-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content; /* Menyesuaikan ukuran dengan konten */
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-content a:hover {
+  background-color: darken(var(--primary), 10%);
+  transform: scale(1.05);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .modal-container {
+    width: 90%; /* Mempersempit modal */
+    max-width: 100%; /* Membatasi modal agar tidak melebihi layar */
+    padding: 1.5rem; /* Mengurangi padding */
+  }
+
+  .modal-content img {
+    height: 8rem; /* Mengurangi ukuran gambar */
+  }
+
+  .modal-content p {
+    font-size: 1rem; /* Mengurangi ukuran font teks */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-container {
+    width: 95%; /* Lebih kecil untuk layar sangat kecil */
+    padding: 1rem; /* Mengurangi padding lebih lanjut */
+  }
+
+  .modal-content img {
+    height: 6rem; /* Ukuran gambar lebih kecil */
+  }
+
+  .modal-content p {
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+  }
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -632,7 +717,6 @@ footer .credit a {
 
 .modal-content {
   flex-wrap: wrap;
-
 }
 /* Mobile Phone */
 @media (max-width: 450px) {
