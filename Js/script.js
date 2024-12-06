@@ -101,12 +101,15 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
-// click tombol close modal
-document.querySelector(".modal .close-icon").onclick = (e) => {
-  itemDetailModal.style.display = "none";
-  e.preventDefault();
-};
 
+document.querySelectorAll(".modal").forEach((modal) => {
+  const closeIcon = modal.querySelector(".close-icon");
+
+  closeIcon.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.style.display = "none";
+  });
+});
 //* click di luar tombol
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
